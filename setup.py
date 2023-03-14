@@ -6,7 +6,7 @@ setuptools.setup(
     author='Milan Patel',
     author_email='milan.patel@fluid-it.com',
     description='Installation of Package',
-    url='https://github.com/fluidmilan/Fluid_Common_Code.git',
+    url='https://github.com/fluidmilan/message_logging.git',
     license='unlicense',
     packages=['']
 )
