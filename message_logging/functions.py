@@ -26,3 +26,11 @@ def getScriptLogString():
 			scriptLogString += logEntry["type"] +': '+ logEntry["log"]+"\n"	
 
 	return scriptLogString
+
+def stringJoin(*args):
+	string = ''
+	for i in args:
+		string += str(i)
+		string += " "
+	#string = ''.join(f'{args}')
+	return string
