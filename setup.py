@@ -8,5 +8,5 @@ setuptools.setup(
     description='Installation of Package',
     url='https://github.com/fluidmilan/message_logging.git',
     license='unlicense',
-    packages=['']
+    packages=['message_logging']
 )
