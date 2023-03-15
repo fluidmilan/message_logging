@@ -1,1 +1,1 @@
-from .functions import log_messages, emptyScriptLog,getErrorCount,getScriptLogString, stringJoin
+from .message_logging import log_messages, emptyScriptLog,getErrorCount,getScriptLogString, stringJoin

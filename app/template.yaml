@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  AWS-CW-Manage-API
+
+  Sample SAM Template for AWS-CW-Manage-API
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 120
+
+Resources:
+  # messageLogFunction:
+  #   Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+  #   Properties:
+  #     CodeUri: ./
+  #     Handler: app.lambda_handler
+  #     Runtime: python3.7
+  #     MemorySize: 1024
+  #     Timeout: 900
+  #     Architectures:
+  #       - x86_64
+  #     Layers:
+  #       - !Ref messageLoggingLayer
+  #     Role: 'arn:aws:iam::582185894531:role/AWSS3PutRole' 
+  messageLoggingLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      ContentUri: ../message_logging #/ConnectWiseTicket.py
+      CompatibleRuntimes:
+        - python3.7
+    Metadata:
+      BuildMethod: python3.7
+      
